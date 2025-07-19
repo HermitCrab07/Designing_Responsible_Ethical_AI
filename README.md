@@ -17,3 +17,14 @@ This WORKING repo outlines parallels between randomized controlled trials (RCTs)
 
 ## Purpose
 To draw practical, structured connections between established scientific practices and responsible AI workflows.
+
+
+| RCT Concept         | AI Analogy                               |
+| ------------------- | ---------------------------------------- |
+| Randomization       | Fairness, mitigating confounding         |
+| Control groups      | Counterfactuals & baselines              |
+| Informed consent    | Transparency, user awareness             |
+| Blinding            | Model explainability                     |
+| P-hacking           | Metric gaming, cherry-picking benchmarks |
+| Phase trials        | Sandbox testing, staged deployment       |
+| IRB / ethics boards | AI ethics review, red teaming            |
