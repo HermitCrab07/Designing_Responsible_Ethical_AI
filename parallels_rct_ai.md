@@ -21,6 +21,10 @@ This document explores parallels between randomized controlled trials (RCTs) in 
 | 11. Post-market surveillance        | 11. Post-deployment monitoring         |
 | 12. Iteration based on new findings | 12. Retraining and ongoing refinement  |
 
+Or in a more visual form - 
+
+<img width="466" height="689" alt="image" src="https://github.com/user-attachments/assets/506ff3c0-0591-41cf-9c7c-2f76433f25d8" />
+
 ---
 
 ## Detailed Explanations
