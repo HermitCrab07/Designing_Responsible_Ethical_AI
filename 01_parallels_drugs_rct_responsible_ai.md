@@ -1,14 +1,34 @@
-# The Parallels Between Drug Development in Clinical Trials and Ethical and Responsible AI
+# How To Use the Structure and Rigor of RCTs (Randomized Clinical Trials) to ship AI better, safer, and faster
+
+## Summary
+
+We ship AI faster when we borrow five habits from RCTs: one question, pre-specify the evaluation, fix the assignment, size the decision, and monitor the harms. I share a 7-step template + mapping table + 3 examples you can paste into your next AI spec. 
+
+## Abstract
+
+AI projects fail from fuzzy questions, metric-shopping, and messy rollouts. What RCTs do differently - single primary outcome, pre-registration, ITT vs per-protocol, safety boards). Here is a 7-step, PM-friendly template that fits into a two-page spec. What you get: a mapping table + 3 examples.
+
 
 ## Overview
 
-This document explores parallels between randomized controlled trials (RCTs) in drug development and ethical, responsible AI system design. Although these domains may appear distinct at first glance—one grounded in biomedical research, the other in data and computation—they share a deep, structural resemblance. Both are high-stakes endeavors that impact human lives. Both require rigorous processes to ensure fairness, efficacy, safety, and transparency. And both must contend with the consequences of bias, oversight, and unintended harm.
+This document looks at parallels between randomized controlled trials (RCTs) in drugs (or say interventions) development - something I have spent years doing - and ethical, responsible AI system design. Although these domains may appear very different at first glance, they are not. In fact, as I found out while working in AI and product development in AI - they both share a fundamental and deep, structural resemblance, which is why it occurred to me that if we followed the "Checklist" of designing and implementing a great RCT (as we had to do during every clinical trial) it would be immensely useful in executing a great AI project.  
 
-## Comparison of Steps: Clinical Trial vs. Responsible AI Design
+## Background: 
+
+To give a little background, RCTs are grounded in biomedical research, while AI is grounded in data and computation. That said, they both have incredibly strong parallels every step of the way - from start to finish. Both are high-stakes attempts to improve human lives and as a result, the consequences of these attempts - if not designed well and executed well - can impact human lives in an extremely negative way. Therefore, both need rigorous methods to ensure fairness, efficacy, safety, and transparency, both must contend with consequences of bias, oversight, unintended harm, and both must be planned well. 
+
+The only difference is that while RCTs have been under the scrutiny of the FDA for years so the regulatory compliance is well established, AI products are only beginning the journey of bias, oversight, and harm. 
+
+While RCTs are executed under a myriad of rules and regulations, AI is only beginning to implement oversight.
+
+This is where the difference begins. 
+
+
+## Preliminary Comparison of Steps: Clinical Trial vs. Responsible AI Design
 
 | Clinical Trial Design               | Responsible AI Design                  |
 | ----------------------------------- | -------------------------------------- |
-| 1. Define medical problem           | 1. Define task or objective            |
+| 1. Define medical hypothesis        | 1. Define task or objective            |
 | 2. Identify target population       | 2. Identify user groups and data scope |
 | 3. Literature & data review         | 3. Literature & dataset review         |
 | 4. Trial design (RCT)               | 4. Model design and pipeline setup     |
@@ -23,12 +43,15 @@ This document explores parallels between randomized controlled trials (RCTs) in 
 
 ---
 
-## Detailed Explanations
-
 ### 1. Defining the Objective/Problem
 
-* **Clinical Trials**: Begin by identifying a specific medical condition the drug is designed to treat.
-* **AI Development**: Define the problem clearly—e.g., predicting suicide risk, optimizing treatment assignment. Poor problem definition often leads to downstream ethical and practical failures.
+It's critical to define a Single Primary Question that has to be measured on a specific population, in a specific time window, using a specific outcome: Does deploying model X reduce Y problem within a certain period of time among adults discharged after a certain procedure Z?
+
+You can have secondary outcomes that you are interested in but the primary outcome must be very specific with respect to what it is, what it answers, what it doesn't answer, why it is important to be answered, how it is measured, during what time frame, and using what outcome. 
+
+This is not trivial and often far more complex that it appears.
+
+Similarly, in AI Development, defining the problem clearly — e.g., predicting readmission within a month after a patient who presented with diabetes at the hospital is discharged from the hospital? Poor problem definition often leads to downstream ethical and practical failures. 
 
 ### 2. Identifying Target Population
 
@@ -135,6 +158,22 @@ Neither a drug nor an algorithm is ever "done." Both require surveillance, feedb
 
 ## Conclusion
 
-The similarities between clinical trial design and responsible AI development are not metaphorical—they are structural. Each step in one domain has a clear parallel in the other, grounded in the need to deliver safe, fair, and effective interventions to human lives.
+The similarities between clinical trial design and responsible AI development are not metaphorical — they are structural. Each step in one domain has a clear parallel in the other, grounded in the need to deliver safe, fair, and effective interventions and changes to human lives.
 
-Both processes demand careful planning, ethical oversight, rigorous testing, and continuous refinement. Both require awareness of bias and a deep commitment to justice. And both, ultimately, are systems of trust: trust that the product—whether a pill or a model—has been built with care, tested with rigor, and deployed with responsibility.
+Both processes demand careful planning, ethical oversight, rigorous testing, and continuous refinement. Both require awareness of bias and a deep commitment to justice. And both, ultimately, are systems of trust: trust that the product—whether it is a pill or a model — has been built with care, tested with rigor, and deployed with responsibility.
+
+## PM Checklist
+- Do you have a primary outcome defined within a specific time window and on a specific population?
+- Assignment unit/ratio/dates fixed?
+- Decision rule to ship/stop written?
+- Harm/fairness guardrails + owner named?
+- Traffic/MDE shows feasibility?
+- Fidelity and adoption tracked?
+
+References:
+ICH E9(R1) on estimands & handling intercurrent events.
+CONSORT 2010 statement (trial reporting discipline).
+CONSORT-AI extension (AI-specific considerations).
+RECOVERY trial write-up (clean primary endpoint & pragmatic design).
+ISPOR/HTA basics on outcomes and decision rules.
+
