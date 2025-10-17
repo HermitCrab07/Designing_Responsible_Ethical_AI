@@ -2,7 +2,7 @@
 
 ## Summary
 
-We ship AI faster when we borrow five habits from RCTs: one question, pre-specify the evaluation, fix the assignment, size the decision, and monitor the harms. I share a 7-step template + mapping table + 3 examples you can paste into your next AI spec. 
+We ship AI faster when we borrow five habits from RCTs: a single primary question, pre-specify the evaluation, fix the assignment, size the decision, and monitor the harms. I share a 7-step template + mapping table + 3 examples you can paste into your next AI spec. 
 
 ## Abstract
 
@@ -15,10 +15,10 @@ This document looks at parallels between randomized controlled trials (RCTs) in 
 
 ## Background: 
 
-To give a little background, RCTs are grounded in many different areas of research, but primarily biomedical research, while AI is grounded in data and computation. That said, both have incredible parallels from start to finish. As both are high-stakes attempts to improve human lives, the consequences - if these not designed and executed well - can impact humans in a negative way. To ensure fairness, efficacy, safety, and transparency, both must contend with consequences of bias, oversight, unintended harm, and both must be planned and implemented well. RCTs have been under the scrutiny of the FDA for years therefore, the regulatory compliance is well established. AI products are only beginning the journey. Whereas RCTs are executed under a myriad of rules and regulations, AI is only beginning to anticipate problems and design oversight. This is where the difference is. 
+To give a little background, RCTs are conducted in many different areas of research (I'm mostly familiar with biomedical research, so I'll stick to that) while AI is grounded in data and computation. That said, both have incredible parallels from start to finish. As both are high-stakes attempts to improve human lives, the consequences - if these not designed and executed well - can impact humans in a negative way. To ensure fairness, efficacy, safety, and transparency, both must contend with consequences of bias, oversight, unintended harm, and both must be planned and implemented well. RCTs have been under the scrutiny of the FDA for years therefore, the regulatory compliance is well established. AI products are only beginning the journey. Whereas RCTs are executed under a myriad of rules and regulations, AI is only beginning to anticipate problems and design oversight. This is where the difference is. 
 
 
-## Preliminary Comparison of Steps: Clinical Trial vs. Responsible AI Design
+## List of Steps and the Fundamental Thematic Parallels: Clinical Trial vs. Responsible AI Design 
 
 | Clinical Trial Design               | Responsible AI Design                  |
 | ----------------------------------- | -------------------------------------- |
@@ -39,15 +39,17 @@ To give a little background, RCTs are grounded in many different areas of resear
 
 ### 1. Defining the Objective/Problem
 
-* **Primary Question:** It's critical to nail down a single primary question that has to be measured on a specific population, in a defined time window, using a specific outcome. For example, Does deploying model X reduce problem Y within a certain period of time among adults discharged after a certain procedure Z? You can always suggest secondary outcomes that you are interested in but the primary outcome is much harder to define. You must be very specific with respect to what it is, what it answers, why it does not answer, why it is important to be answered, how it is measured, how variable it is, how much missing data there will be, during what time frame it is best collected and it best shows the effect you want it to show, and using what outcome. This is often far more complex that it appears.
+* **Primary Question:** It's critical to nail down a single primary question that has to be measured on a specific population, in a defined time window, using a specific outcome. For example, does deploying model X reduce problem Y within a certain period of time among adults discharged after a certain procedure Z? You can always suggest secondary outcomes that you are interested in but the primary outcome is much harder to define. You must be very specific with respect to what it is, what it answers, why it does not answer, why it is important to be answered, how it is measured, how variable it is, how much missing data there will be, during what time frame it is best collected and it best shows the effect you want it to show, and using what outcome. This is often far more complex that it appears.
 
 * **Similarly, in AI Development:** defining the problem clearly — say, predicting readmission within a month after a patient who presented with diabetes at the hospital is discharged from the hospital - is critical. Once the specificity is nailed down with respect to time, measurement, variability, missingness, etc, Poor problem definition often leads to downstream ethical and practical failures. 
 
 ### 2. Identifying Target Population
 
-* **Clinical Trials** design trials around a population of interest, ensuring appropriate group representation. For example, models predicting risk of a heart disease in US will be different compared to models predicting risk of heart disease in Japan, although both models are predicting risk of heart disease. Furthermore, if the model is developed on white men in the US, it is not necessarily going to perform well on (say) white women. If the model should predict well on men and women, the model should be developed on  men and women. In drug trials, however, women, older adults, minorities have historically been left out. 
+* **Clinical Trials** design trials around a population of interest, ensuring appropriate group representation. For example, models predicting risk of a heart disease in US will be different compared to models predicting risk of heart disease in Japan, although both models are predicting risk of heart disease. Furthermore, if the model is developed on white men in the US, it is not necessarily going to perform well on (say) white women. If the model should predict well on men and women, the model should be developed on  men and women. In drug trials, however, women, older adults, minorities have historically been left out. The most important problem in this situation is that when we're using the models, we DO NOT KNOW the data the models were developed on. For instance, were women in the training data? Were different ethnicities? If not, we will get wrong predictions and NOT KNOW they are wrong. Just as pharmacogenomics can affect how individuals metabolize drugs, demographic and social factors influence how drugs and AI systems interact with users.
 
-* **Similarly, in AI Development** You must clearly define who the AI system is meant to serve. This affects what data is collected and how the model is evaluated. In AI, training datasets often reflect the dominant group, resulting in biases. Both fields struggle with biases that come with underrepresentation. Training data must reflect the data on which the model is supposed to work. Representative data is not a "nice to have" - it’s basic to efficacy and safety. 
+* **Similarly, in AI Development** You will have the exact same problem. You must clearly define who the AI system is meant to serve. This immediately tells you what data should be collected and how the model should be evaluated. In AI, training datasets however often reflect the dominant group, which needless to say, is a problem. Training data must reflect the data on which the model is supposed to predict. Thus, both fields struggle with biases that come with underrepresentation. Representative data is not a "nice to have" - it’s basic to efficacy and safety. 
+
+* Drugs are tested across subgroups to catch population-specific effects. AI systems must be stress-tested for fairness and performance across demographic slices. Subgroup analysis is essential in both domains to avoid systemic failure. Systematic bias can occur at the design level. Without careful scrutiny, both drugs and algorithms will produce disproportionate harm.
 
 ### 3. Reviewing Existing Literature and Data
 
@@ -87,59 +89,34 @@ To give a little background, RCTs are grounded in many different areas of resear
 
 ### 10. Regulatory Approval vs. Transparency
 
-* **Clinical Trials**: No drug is released without approval by regulatory bodies.
+* **Clinical Trials**: No drug is released without approval by regulatory bodies. Drug development is tightly regulated. AI is moving slowly toward similar scrutiny through emerging standards, ethics boards, and government frameworks.
+
+**Parallel**: Oversight ensures accountability. Without it, safety, fairness, and trust erode.
 * **AI Development**: Increasingly, AI systems are expected to be auditable, interpretable, and transparent before deployment.
 
 ### 11. Post-Market Surveillance
 
-* **Clinical Trials**: Monitor for long-term effects in the real world.
-* **AI Development**: Track model drift, unfair outcomes, or new failure modes in production environments.
+* **Clinical Trials**: Monitor for long-term effects in the real world. ### Transparency and Explainability
 
-### 12. Iteration and Retraining
-
-* **Clinical Trials:** New findings often lead to revised trials. 
-
-* **Similarly, in AI Development:** Continuous feedback and retraining ensure AI systems remain fair and effective as real-world data evolves.
-
----
-
-## Thematic Parallels
-
-### Bias in Algorithms vs. Drug Formulation
-
-Just as pharmacogenomics can affect how individuals metabolize drugs, demographic and social factors influence how AI systems interact with users.
-
-**Parallel**: Systematic bias can occur at the design level. Without careful scrutiny, both drugs and algorithms may produce disproportionate harm.
-
-### Testing and Evaluation Across Groups
-
-Drugs are tested across subgroups to catch population-specific effects. AI systems must be stress-tested for fairness and performance across demographic slices.
-
-**Parallel**: Subgroup analysis is essential in both domains to avoid systemic failure.
-
-### Regulatory Oversight
-
-Drug development is tightly regulated. AI is moving slowly toward similar scrutiny through emerging standards, ethics boards, and government frameworks.
-
-**Parallel**: Oversight ensures accountability. Without it, safety, fairness, and trust erode.
-
-### Transparency and Explainability
-
-Clear communication is required in drug trials (methodology, side effects, outcomes). Similarly, AI models must be interpretable—especially in healthcare, finance, and criminal justice.
-
-**Parallel**: Without explainability, trust collapses—whether in doctors, patients, users, or regulators.
-
-### Ethics of Risk Mitigation
+Clear communication is required in drug trials (methodology, side effects, outcomes). Similarly, AI models must be interpretable—especially in healthcare, finance, and criminal justice. ### Ethics of Risk Mitigation
 
 Drug developers must balance benefit vs. risk. AI developers face a similar responsibility, especially when systems can deny access to healthcare, employment, or justice.
 
 **Parallel**: Both must design with vulnerable populations in mind and prioritize harm reduction.
 
+**Parallel**: Without explainability, trust collapses—whether in doctors, patients, users, or regulators.
+* **AI Development**: Track model drift, unfair outcomes, or new failure modes in production environments.
+
+### 12. Iteration and Retraining
+
+* **Clinical Trials:** New findings often lead to revised trials. 
 ### Post-Deployment Monitoring and Feedback
 
 Neither a drug nor an algorithm is ever "done." Both require surveillance, feedback loops, and the willingness to adjust when harm emerges.
 
 **Parallel**: Ongoing refinement is not optional—it's core to ethical practice.
+
+* **Similarly, in AI Development:** Continuous feedback and retraining ensure AI systems remain fair and effective as real-world data evolves.
 
 ---
 
@@ -147,13 +124,7 @@ Neither a drug nor an algorithm is ever "done." Both require surveillance, feedb
 
 The similarities between randomized clinical trial design and AI development are not metaphorical — they are structural. Each step in one domain has a parallel in the other, grounded in the need to deliver safe, fair, and effective interventions and changes to human lives. Both demand careful planning, ethical oversight, and rigorous testing, and continuous refinement. Both require awareness of bias and a deep commitment to justice. And both, ultimately, are systems of trust: trust that the product—whether it is a pill or a model — has been built with care, tested with rigor, and deployed with responsibility.
 
-## PM Checklist
-- Do you have a primary outcome defined within a specific time window and on a specific population?
-- Assignment unit/ratio/dates fixed?
-- Decision rule to ship/stop written?
-- Harm/fairness guardrails + owner named?
-- Traffic/MDE shows feasibility?
-- Fidelity and adoption tracked?
+
 
 References:
 ICH E9(R1) on estimands & handling intercurrent events.
