@@ -15,11 +15,7 @@ This document looks at parallels between randomized controlled trials (RCTs) in 
 
 ## Background: 
 
-To give a little background, RCTs are grounded in many different areas of research, but primarily biomedical research, while AI is grounded in data and computation. That said, both have incredibly strong parallels from start to finish. As both are high-stakes attempts to improve human lives, the consequences - if these attempts not designed and executed well - can impact humans in a negative way. To ensure fairness, efficacy, safety, and transparency, both must contend with consequences of bias, oversight, unintended harm, and both must be planned and implemented well. 
-
-RCTs have been under the scrutiny of the FDA for years therefore, the regulatory compliance is well established. AI products are only beginning the journey. Whereas RCTs are executed under a myriad of rules and regulations, AI is only beginning to anticipate problems and design oversight. 
-
-This is where the difference is. 
+To give a little background, RCTs are grounded in many different areas of research, but primarily biomedical research, while AI is grounded in data and computation. That said, both have incredible parallels from start to finish. As both are high-stakes attempts to improve human lives, the consequences - if these not designed and executed well - can impact humans in a negative way. To ensure fairness, efficacy, safety, and transparency, both must contend with consequences of bias, oversight, unintended harm, and both must be planned and implemented well. RCTs have been under the scrutiny of the FDA for years therefore, the regulatory compliance is well established. AI products are only beginning the journey. Whereas RCTs are executed under a myriad of rules and regulations, AI is only beginning to anticipate problems and design oversight. This is where the difference is. 
 
 
 ## Preliminary Comparison of Steps: Clinical Trial vs. Responsible AI Design
@@ -108,12 +104,6 @@ This is where the difference is.
 ---
 
 ## Thematic Parallels
-
-### Data Collection and Representation
-
-Both fields struggle with underrepresentation. In drug trials, women, older adults, and minorities have historically been left out. In AI, training datasets often reflect the dominant group, resulting in biased recommendations.
-
-**Parallel**: Data diversity is not a nice-to-have—it’s foundational to efficacy and safety.
 
 ### Bias in Algorithms vs. Drug Formulation
 
