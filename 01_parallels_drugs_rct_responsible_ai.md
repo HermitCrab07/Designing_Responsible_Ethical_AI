@@ -15,13 +15,11 @@ This document looks at parallels between randomized controlled trials (RCTs) in 
 
 ## Background: 
 
-To give a little background, RCTs are grounded in biomedical research, while AI is grounded in data and computation. That said, they both have incredibly strong parallels every step of the way - from start to finish. Both are high-stakes attempts to improve human lives and as a result, the consequences of these attempts - if not designed well and executed well - can impact human lives in an extremely negative way. Therefore, both need rigorous methods to ensure fairness, efficacy, safety, and transparency, both must contend with consequences of bias, oversight, unintended harm, and both must be planned well. 
+To give a little background, RCTs are grounded in many different areas of research, but primarily biomedical research, while AI is grounded in data and computation. That said, both have incredibly strong parallels from start to finish. As both are high-stakes attempts to improve human lives, the consequences - if these attempts not designed and executed well - can impact humans in a negative way. To ensure fairness, efficacy, safety, and transparency, both must contend with consequences of bias, oversight, unintended harm, and both must be planned and implemented well. 
 
-The only difference is that while RCTs have been under the scrutiny of the FDA for years so the regulatory compliance is well established, AI products are only beginning the journey of bias, oversight, and harm. 
+RCTs have been under the scrutiny of the FDA for years therefore, the regulatory compliance is well established. AI products are only beginning the journey. Whereas RCTs are executed under a myriad of rules and regulations, AI is only beginning to anticipate problems and design oversight. 
 
-While RCTs are executed under a myriad of rules and regulations, AI is only beginning to implement oversight.
-
-This is where the difference begins. 
+This is where the difference is. 
 
 
 ## Preliminary Comparison of Steps: Clinical Trial vs. Responsible AI Design
@@ -29,7 +27,7 @@ This is where the difference begins.
 | Clinical Trial Design               | Responsible AI Design                  |
 | ----------------------------------- | -------------------------------------- |
 | 1. Define medical hypothesis        | 1. Define task or objective            |
-| 2. Identify target population       | 2. Identify user groups and data scope |
+| 2. Identify target population       | 2. Identify user groups                |
 | 3. Literature & data review         | 3. Literature & dataset review         |
 | 4. Trial design (RCT)               | 4. Model design and pipeline setup     |
 | 5. Inclusion/exclusion criteria     | 5. Data collection & sampling          |
@@ -45,23 +43,21 @@ This is where the difference begins.
 
 ### 1. Defining the Objective/Problem
 
-It's critical to define a Single Primary Question that has to be measured on a specific population, in a specific time window, using a specific outcome: Does deploying model X reduce Y problem within a certain period of time among adults discharged after a certain procedure Z?
+* **Primary Question:** It's critical to nail down a single primary question that has to be measured on a specific population, in a defined time window, using a specific outcome. For example, Does deploying model X reduce problem Y within a certain period of time among adults discharged after a certain procedure Z? You can always suggest secondary outcomes that you are interested in but the primary outcome is much harder to define. You must be very specific with respect to what it is, what it answers, why it does not answer, why it is important to be answered, how it is measured, how variable it is, how much missing data there will be, during what time frame it is best collected and it best shows the effect you want it to show, and using what outcome. This is often far more complex that it appears.
 
-You can have secondary outcomes that you are interested in but the primary outcome must be very specific with respect to what it is, what it answers, what it doesn't answer, why it is important to be answered, how it is measured, during what time frame, and using what outcome. 
-
-This is not trivial and often far more complex that it appears.
-
-Similarly, in AI Development, defining the problem clearly — e.g., predicting readmission within a month after a patient who presented with diabetes at the hospital is discharged from the hospital? Poor problem definition often leads to downstream ethical and practical failures. 
+* **Similarly, in AI Development:** defining the problem clearly — say, predicting readmission within a month after a patient who presented with diabetes at the hospital is discharged from the hospital - is critical. Once the specificity is nailed down with respect to time, measurement, variability, missingness, etc, Poor problem definition often leads to downstream ethical and practical failures. 
 
 ### 2. Identifying Target Population
 
-* **Clinical Trials**: Design trials around a population of interest, ensuring appropriate subgroup representation.
-* **AI Development**: Clearly define who the AI system is meant to serve. This affects which data is collected and how the model is evaluated.
+* **Clinical Trials** design trials around a population of interest, ensuring appropriate group representation. For example, models predicting risk of a heart disease in US will be different compared to models predicting risk of heart disease in Japan, although both models are predicting risk of heart disease. Furthermore, if the model is developed on white men in the US, it is not necessarily going to perform well on (say) white women. If the model should predict well on men and women, the model should be developed on  men and women. In drug trials, however, women, older adults, minorities have historically been left out. 
+
+* **Similarly, in AI Development** You must clearly define who the AI system is meant to serve. This affects what data is collected and how the model is evaluated. In AI, training datasets often reflect the dominant group, resulting in biases. Both fields struggle with biases that come with underrepresentation. Training data must reflect the data on which the model is supposed to work. Representative data is not a "nice to have" - it’s basic to efficacy and safety. 
 
 ### 3. Reviewing Existing Literature and Data
 
-* **Clinical Trials**: Literature reviews inform hypotheses and avoid redundant or harmful experimentation.
-* **AI Development**: Avoid reintroducing bias by understanding existing data limitations, past failures, and known methodological critiques.
+* **Clinical Trials:** Literature reviews are critical while setting up hypotheses to avoid redundant or harmful trials and experimentation. This is the time to understand all previous trials that have been done, on what populations, what results were obtained, and what the flaws and gaps existed in these trials. 
+
+* **Similarly, in AI Development** Avoid reintroducing bias by understanding existing data limitations, past failures, and known methodological critiques.
 
 ### 4. Study Design vs. AI Model Design
 
@@ -105,8 +101,9 @@ Similarly, in AI Development, defining the problem clearly — e.g., predicting 
 
 ### 12. Iteration and Retraining
 
-* **Clinical Trials**: New findings often lead to revised trials.
-* **AI Development**: Continuous feedback and retraining ensure AI systems remain fair and effective as real-world data evolves.
+* **Clinical Trials:** New findings often lead to revised trials. 
+
+* **Similarly, in AI Development:** Continuous feedback and retraining ensure AI systems remain fair and effective as real-world data evolves.
 
 ---
 
@@ -158,9 +155,7 @@ Neither a drug nor an algorithm is ever "done." Both require surveillance, feedb
 
 ## Conclusion
 
-The similarities between clinical trial design and responsible AI development are not metaphorical — they are structural. Each step in one domain has a clear parallel in the other, grounded in the need to deliver safe, fair, and effective interventions and changes to human lives.
-
-Both processes demand careful planning, ethical oversight, rigorous testing, and continuous refinement. Both require awareness of bias and a deep commitment to justice. And both, ultimately, are systems of trust: trust that the product—whether it is a pill or a model — has been built with care, tested with rigor, and deployed with responsibility.
+The similarities between randomized clinical trial design and AI development are not metaphorical — they are structural. Each step in one domain has a parallel in the other, grounded in the need to deliver safe, fair, and effective interventions and changes to human lives. Both demand careful planning, ethical oversight, and rigorous testing, and continuous refinement. Both require awareness of bias and a deep commitment to justice. And both, ultimately, are systems of trust: trust that the product—whether it is a pill or a model — has been built with care, tested with rigor, and deployed with responsibility.
 
 ## PM Checklist
 - Do you have a primary outcome defined within a specific time window and on a specific population?
