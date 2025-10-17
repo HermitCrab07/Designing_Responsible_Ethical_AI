@@ -66,5 +66,4 @@
 
 ### Tips
 
-* Keep your **estimand** definition and **intercurrent event** handling (ICH E9(R1)) aligned with the analysis set you report (e.g., ITT vs treatment policy vs hypothetical).
-* For AI trials, document **data flow**, **human oversight**, and any **site-specific constraints** that affect deployment or external validity.
+* For AI trials, document data flow, human oversight, and any site-specific constraints that affect deployment or external validity.
