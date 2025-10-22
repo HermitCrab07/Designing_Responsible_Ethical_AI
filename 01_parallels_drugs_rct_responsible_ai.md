@@ -100,25 +100,16 @@ Now let's take a preliminary look at the parallels:
 
 ### 11. Post-Market Surveillance
 
-* **Clinical Trials**: Monitor for long-term effects in the real world. ### Transparency and Explainability
+* **Clinical Trials**: Monitor for long-term effects in the real world. 
 
-Clear communication is required in drug trials (methodology, side effects, outcomes). Similarly, AI models must be interpretable—especially in healthcare, finance, and criminal justice. ### Ethics of Risk Mitigation
+Clear communication is required in drug trials (methodology, side effects, outcomes). Similarly, AI models must be interpretable—especially in healthcare, finance, and criminal justice. Drug developers must balance benefit vs. risk. AI developers face a similar responsibility, especially when systems can deny access to healthcare, employment, or justice.
 
-Drug developers must balance benefit vs. risk. AI developers face a similar responsibility, especially when systems can deny access to healthcare, employment, or justice.
-
-**Parallel**: Both must design with vulnerable populations in mind and prioritize harm reduction.
-
-**Parallel**: Without explainability, trust collapses—whether in doctors, patients, users, or regulators.
+**Parallel**: Both must design with vulnerable populations in mind and prioritize harm reduction. Without transparency and explainability, trust collapses—whether in doctors, patients, users, or regulators. 
 * **AI Development**: Track model drift, unfair outcomes, or new failure modes in production environments.
 
 ### 12. Iteration and Retraining
 
-* **Clinical Trials:** New findings often lead to revised trials. 
-### Post-Deployment Monitoring and Feedback
-
-Neither a drug nor an algorithm is ever "done." Both require surveillance, feedback loops, and the willingness to adjust when harm emerges.
-
-**Parallel**: Ongoing refinement is not optional—it's core to ethical practice.
+* **Clinical Trials:** New findings often lead to revised trials - post-Deployment Monitoring and Feedback. Neither a drug nor an algorithm is ever "done." Both require surveillance, feedback loops, and the willingness to adjust when harm emerges. Ongoing refinement is not optional — it's core to ethical practice.
 
 * **Similarly, in AI Development:** Continuous feedback and retraining ensure AI systems remain fair and effective as real-world data evolves.
 
