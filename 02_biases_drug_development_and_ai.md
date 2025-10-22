@@ -51,13 +51,13 @@ Bias in decision-making systems—whether pharmacological or algorithmic—has l
 
 ### 2. **Facial Recognition Bias**
 
-* **Issue**: Error rates were much higher for darker-skinned women than for lighter-skinned men, showing stark intersectional disparities. Misidentification of darker-skinned faces.
+* **Issue**: Error rates were much higher for darker-skinned women than for lighter-skinned men, showing stark disparities. Misidentification of darker-skinned faces.
 * **Parallel**: Thalidomide—testing failures led to population-specific harm.
 * **Citation**: Buolamwini & Gebru (2018). *Gender Shades.*
 
 ### 3. **Healthcare Risk Scoring Bias**
 
-* **Issue**: Using spend as a proxy for illness under-referred Black patients with equal disease burden; fixing the target variable dramatically reduced bias. Parallel: statins lesson—train on the right signal/population. Used cost as a proxy for need, disadvantaging Black patients.
+* **Issue**: Using spend as a proxy for illness under-referred Black patients with equal disease burden; fixing the target variable dramatically reduced bias. Used cost as a proxy for need, disadvantaging Black patients.
 * **Parallel**: Like statins—failure to adjust for group-level difference.
 * **Citation**: Obermeyer et al. (2019). *Science.*
 
