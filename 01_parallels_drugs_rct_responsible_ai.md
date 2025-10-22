@@ -1,10 +1,5 @@
 # How To Use the Structure and Rigor of RCTs (Randomized Clinical Trials) to ship AI better, safer, and faster
 
-## Summary
-
-We ship AI faster when we borrow fundamental habits from RCTs: a single primary question, pre-specifying the evaluation of the models, and monitoring the harms. 
-
-
 ## Overview
 
 This document looks at parallels between randomized controlled trials (RCTs) in drugs (or say interventions) development - something I have spent years doing - and ethical, responsible AI system design. Although these domains may appear very different at first glance, they are not. As I found out while working in AI and product development in AI - they share a deep, structural resemblance, which is why it occurred to me that if we followed a "Checklist" of designing and implementing a great RCT (as we had to do during every clinical trial throughout my career) it would be immensely useful in executing a great AI project as well.
@@ -93,9 +88,8 @@ Now let's take a preliminary look at the parallels:
 
 ### 10. Regulatory Approval vs. Transparency
 
-* **Clinical Trials**: No drug is released without approval by regulatory bodies. Drug development is tightly regulated. AI is moving slowly toward similar scrutiny through emerging standards, ethics boards, and government frameworks.
-
-**Parallel**: Oversight ensures accountability. Without it, safety, fairness, and trust erode.
+* **Clinical Trials**: No drug is released without approval by regulatory bodies. Drug development is tightly regulated. AI is moving slowly toward similar scrutiny through emerging standards, ethics boards, and government frameworks. Oversight ensures accountability. Without it, safety, fairness, and trust erode.
+  
 * **AI Development**: Increasingly, AI systems are expected to be auditable, interpretable, and transparent before deployment.
 
 ### 11. Post-Market Surveillance
