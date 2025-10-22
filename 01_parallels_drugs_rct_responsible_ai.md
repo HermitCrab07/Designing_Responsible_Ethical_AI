@@ -102,7 +102,7 @@ Now let's take a preliminary look at the parallels:
 
 * **Clinical Trials:** New findings often lead to revised trials - post-Deployment Monitoring and Feedback. Neither a drug nor an algorithm is ever "done." Both require surveillance, feedback loops, and the willingness to adjust when harm emerges. Ongoing refinement is not optional — it's core to ethical practice.
 
-* **Similarly, in AI Development:** Continuous feedback and retraining ensure AI systems remain fair and effective as real-world data evolves.
+* **AI Development:** Continuous feedback and retraining ensure AI systems remain fair and effective as real-world data evolves.
 
 ---
 
