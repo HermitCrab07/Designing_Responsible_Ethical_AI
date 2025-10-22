@@ -100,12 +100,9 @@ Now let's take a preliminary look at the parallels:
 
 ### 11. Post-Market Surveillance
 
-* **Clinical Trials**: Monitor for long-term effects in the real world. 
-
-Clear communication is required in drug trials (methodology, side effects, outcomes). Similarly, AI models must be interpretable—especially in healthcare, finance, and criminal justice. Drug developers must balance benefit vs. risk. AI developers face a similar responsibility, especially when systems can deny access to healthcare, employment, or justice.
-
-**Parallel**: Both must design with vulnerable populations in mind and prioritize harm reduction. Without transparency and explainability, trust collapses—whether in doctors, patients, users, or regulators. 
-* **AI Development**: Track model drift, unfair outcomes, or new failure modes in production environments.
+* **Clinical Trials**: Monitor for long-term effects in the real world. Clear communication is required in drug trials (methodology, side effects, outcomes). Similarly, AI models must be interpretable—especially in healthcare, finance, and criminal justice. Drug developers must balance benefit vs. risk. AI developers face a similar responsibility, especially when systems can deny access to healthcare, employment, or justice. 
+  
+* **AI Development**: Track model drift, unfair outcomes, or new failure modes in production environments. Both must design with vulnerable populations in mind and prioritize harm reduction. Without transparency and explainability, trust collapses—whether in doctors, patients, users, or regulators.
 
 ### 12. Iteration and Retraining
 
