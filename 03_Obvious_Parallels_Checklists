@@ -1,49 +1,48 @@
+The following checklist is a good list to follow when developing AI models. Quite a few of them are not applicable to AI models.
+But the rest are excellent points to think about and every AI model could benefit from a discussion. 
 
-## A. CONSORT 2010 (report **all**)
+## A. CONSORT 2010 (report all)
 
-| #   | Item (succinct)                                             | Done | Where | Notes |
+| #   | Item (succinct)                                             | RCT  | DONE? | IN AI |
 | --- | ----------------------------------------------------------- | ---: | :---- | :---- |
-| 1a  | Title states randomized trial                               |  [ ] |       |       |
-| 1b  | Structured abstract (design, methods, results, conclusions) |  [ ] |       |       |
-| 2a  | Background & scientific rationale                           |  [ ] |       |       |
-| 2b  | Objectives/hypotheses                                       |  [ ] |       |       |
-| 3a  | Trial design (parallel/factorial) & allocation ratio        |  [ ] |       |       |
-| 3b  | Important post-start changes (with reasons)                 |  [ ] |       |       |
-| 4a  | Participant eligibility criteria                            |  [ ] |       |       |
-| 4b  | Settings & locations                                        |  [ ] |       |       |
-| 5   | Interventions (detail sufficient for replication)           |  [ ] |       |       |
-| 6a  | Prespecified outcomes & how/when assessed                   |  [ ] |       |       |
-| 6b  | Outcome changes after start (reasons)                       |  [ ] |       |       |
-| 7a  | Sample size determination                                   |  [ ] |       |       |
-| 7b  | Interim analyses / stopping guidelines                      |  [ ] |       |       |
-| 8a  | Random sequence generation method                           |  [ ] |       |       |
-| 8b  | Type of randomization; restrictions (blocking)              |  [ ] |       |       |
-| 9   | Allocation concealment mechanism                            |  [ ] |       |       |
-| 10  | Who generated sequence; who enrolled/assigned               |  [ ] |       |       |
-| 11a | Blinding: who, how                                          |  [ ] |       |       |
-| 11b | Similarity of interventions (if relevant)                   |  [ ] |       |       |
-| 12a | Statistical methods for primary/secondary outcomes          |  [ ] |       |       |
-| 12b | Methods for additional analyses (subgroups/adjusted)        |  [ ] |       |       |
-| 13a | Numbers randomized/treated/analyzed per group               |  [ ] |       |       |
-| 13b | Losses/exclusions after randomization (reasons)             |  [ ] |       |       |
-| 14a | Recruitment & follow-up dates                               |  [ ] |       |       |
-| 14b | Why trial ended/was stopped                                 |  [ ] |       |       |
-| 15  | Baseline characteristics table                              |  [ ] |       |       |
-| 16  | Numbers analyzed per group; analysis set (e.g., ITT)        |  [ ] |       |       |
-| 17a | Outcome results with effect size & 95% CI                   |  [ ] |       |       |
-| 17b | For binary outcomes: absolute **and** relative effects      |  [ ] |       |       |
-| 18  | Ancillary analyses (pre-specified vs exploratory)           |  [ ] |       |       |
-| 19  | Harms/unintended effects                                    |  [ ] |       |       |
-| 20  | Limitations: bias, imprecision, multiplicity                |  [ ] |       |       |
-| 21  | Generalizability (external validity)                        |  [ ] |       |       |
-| 22  | Interpretation balancing benefits/harms/other evidence      |  [ ] |       |       |
-| 23  | Trial registration (registry + number)                      |  [ ] |       |       |
-| 24  | Full protocol access                                        |  [ ] |       |       |
-| 25  | Funding sources & role of funders                           |  [ ] |       |       |
+| 1a  | Title states randomized trial                               |  YES |       |   NA  |
+| 1b  | Structured abstract (design, methods, results, conclusions) |  YES |       |       |
+| 2a  | Background & scientific rationale                           |  YES |       |       |
+| 2b  | Objectives/hypotheses                                       |  YES |       |       |
+| 3a  | Trial design (parallel/factorial) & allocation ratio        |  YES |       |       |
+| 3b  | Important post-start changes (with reasons)                 |  YES |       |       |       
+| 4a  | Participant eligibility criteria                            |  YES |       |       |
+| 4b  | Settings & locations                                        |  YES |       |       |
+| 5   | Interventions (detail sufficient for replication)           |  YES |       |       |
+| 6a  | Prespecified outcomes & how/when assessed                   |  YES |       |       |
+| 6b  | Outcome changes after start (reasons)                       |  YES |       |       |
+| 7a  | Sample size determination                                   |  YES |       |       |
+| 8b  | Type of randomization; restrictions (blocking)              |  YES |       |   NA  |
+| 9   | Allocation concealment mechanism                            |  YES |       |   NA  |       
+| 11a | Blinding: who, how                                          |  YES |       |   NA  |       
+| 11b | Similarity of interventions (if relevant)                   |  YES |       |   NA  |       
+| 12a | Statistical methods for primary/secondary outcomes          |  YES |       |       |
+| 12b | Methods for additional analyses (subgroups/adjusted)        |  YES |       |       |
+| 13a | Numbers randomized/treated/analyzed per group               |  YES |       |       |
+| 13b | Losses/exclusions after randomization (reasons)             |  YES |       |       |
+| 14a | Recruitment & follow-up dates                               |  YES |       |   NA  |
+| 14b | Why trial ended/was stopped                                 |  YES |       |   NA  |
+| 15  | Baseline characteristics table                              |  YES |       |       |
+| 16  | Numbers analyzed per group; analysis set (e.g., ITT)        |  YES |       |       |
+| 17a | Outcome results with effect size & 95% CI                   |  YES |       |       |
+| 17b | For binary outcomes: absolute **and** relative effects      |  YES |       |       |
+| 18  | Ancillary analyses (pre-specified vs exploratory)           |  YES |       |       |
+| 19  | Harms/unintended effects                                    |  YES |       |       |
+| 20  | Limitations: bias, imprecision, multiplicity                |  YES |       |       |
+| 21  | Generalizability (external validity)                        |  YES |       |       |
+| 22  | Interpretation balancing benefits/harms/other evidence      |  YES |       |       |
+| 23  | Trial registration (registry + number)                      |  YES |       |   NA  |
+| 24  | Full protocol access                                        |  YES |       |       |
+| 25  | Funding sources & role of funders                           |  YES |       |       |
 
 ---
 
-## B. CONSORT-AI Extension (report **in addition** to CONSORT 2010)
+## B. CONSORT-AI Extension (report **in addition** to CONSORT 2010) - SPECIFIC to AI models:
 
 | # (AI)   | AI-specific consideration                            | Done | Where | Notes |
 | -------- | ---------------------------------------------------- | ---: | :---- | :---- |
