@@ -4,7 +4,7 @@ especially in the SAPs - i.e., the Statistical Analysis Plans), we should plan f
 1. Estimands ≠ Metrics
 
 * **RCT**: ICH E9 forces us to declare the population, treatment, endpoint, and events handling. Which is hard, but necessary.
-* **AI**: This is a good practice: Replace “accuracy only using AUC” with a decision-centric estimand: for whom, under what use, what payoff/costs, what happens when users don’t comply.
+* **AI**: This is a good practice: Replace “accuracy only using AUC” with a decision-centric questions: for whom, under what use, what payoff/costs, what happens when users don’t comply.
 * **Do**: Write a one-liner for your AI (population, decision, why and at what cost/benefit, and what events like overrides/dropouts/alerts ignored) and ensure eval + deployment logs match it.
 
 2. Events ↔ Real Frictions - 
