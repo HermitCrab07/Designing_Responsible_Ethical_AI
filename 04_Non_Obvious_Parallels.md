@@ -11,8 +11,8 @@ especially in the SAPs - i.e., the Statistical Analysis Plans), we should plan f
  Events that might suddenly happen that we MUST prepare for and deal with at both patient level/analysis level during RCTs - some examples:
 
 * **RCTs**:
-  - Discontinuation/interruption of assigned treatment (toxicity, intolerance, patient preference).
-  - Non-adherence (missed doses, partial compliance - happens all the time).
+  - Discontinuation/interruption of assigned treatment.
+  - Non-adherence (missed doses, partial compliance).
   - Events that preclude outcome measurement.
   - Data capture failure (say, EHR field missing).
   - Loss to follow-up/withdrawal of consent (no endpoint obtained).
